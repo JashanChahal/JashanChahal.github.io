@@ -1,9 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Roboto Condensed', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #E5D68A
+  font-family: 'Staatliches', cursive;
+  background-color: #000000;
+  color: white;
 }
 
 code {
