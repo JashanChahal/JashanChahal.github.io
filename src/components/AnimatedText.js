@@ -1,8 +1,10 @@
 import { useState, useRef } from 'react';
 import './animatedText.css'
+
 export const AnimatedText = ({ textColor, overlayColor, children, ...props }) => {
+
     const initialMousePos = { x: 0, y: 0 };
-    
+
     const containerElem = useRef(null);
     const [mousePos, setMousePos] = useState(initialMousePos)
 
@@ -20,7 +22,6 @@ export const AnimatedText = ({ textColor, overlayColor, children, ...props }) =>
     };
 
     return (
-
         <section
             className="animatedTextContainer"
             {...props}
@@ -45,7 +46,7 @@ export const AnimatedText = ({ textColor, overlayColor, children, ...props }) =>
             >
                 {children}
             </div>
-
         </section>
     );
 }
+
