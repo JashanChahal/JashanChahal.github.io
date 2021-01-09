@@ -41,7 +41,7 @@ export const AnimatedText = ({ textColor, overlayColor, children, ...props }) =>
                 {children}
             </div>
             <div
-                style={{ color: overlayColor }}
+                style={{color: overlayColor}}
                 className="animatedTextContentClone"
             >
                 {children}
