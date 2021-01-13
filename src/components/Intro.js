@@ -1,6 +1,5 @@
 import { AnimatedText } from "./AnimatedText";
 import { SocialMedia } from './SocialMedia';
-
 export const Intro = (props) => {
     return (
         <>
