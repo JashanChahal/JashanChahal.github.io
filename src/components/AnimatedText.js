@@ -1,6 +1,15 @@
 import { useState, useRef } from 'react';
 import { css } from '@emotion/css';
 
+const containerStyle = css`
+font-size: 100px;
+font-weight: 600;
+line-height: 1.1;
+letter-spacing: 5px;
+margin: 0;
+            `;
+
+
 export const AnimatedText = ({ textColor, overlayColor, children, ...props }) => {
 
     const initialMousePos = { x: 0, y: 0 };
@@ -40,29 +49,17 @@ export const AnimatedText = ({ textColor, overlayColor, children, ...props }) =>
         >
             <div
                 style={{ color: textColor }}
-                className={css`
-                    color: #000000;
-                    font-size: 100px;
-                    font-weight: 600;
-                    line-height: 1.1;
-                    letter-spacing: 5px;
-                    margin: 0;
-                                `}
+                className={containerStyle}
             >
                 {children}
             </div>
             <div
                 style={{ color: overlayColor }}
                 className={css`
-                    font-size: 100px;
-                    font-weight: 600;
-                    line-height: 1.1;
-                    letter-spacing: 5px;
-                    margin: 0;
+                   ${containerStyle};
                     position: absolute;
-                    left: 0;
+                    left: 0;    
                     top: 0;
-                    color: #ffffff;
                   transition: all 0.4s ease-out;
                 clip-path: polygon(
                 0 0 ,
