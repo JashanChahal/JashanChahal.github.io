@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronCircleRight, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useState } from "react";
-import './socialMedia.css';
+
 export const SocialMedia = (props) => {
     const icons = [faGithub, faLinkedin, faInstagram, faFacebook];
 
